@@ -1,17 +1,28 @@
 {
-    "enabledManagers": ["custom.regex"],
-    "customManagers": [
-        {
-            "fileMatch": [
-                "^Dockerfile$"
-            ],
-            "customType": "regex",
-            "datasourceTemplate": "github-tags",
-            "depNameTemplate": "konflux-ci/pipeline-migration-tool",
-            "matchStrings": [
-                "ARG PIPELINE_MIGRATION_TOOL_VERSION=v(?<currentValue>[\\d\\.]+)"
-            ],
-            "versioningTemplate": "semver"
-        }
-    ]
+  "customManagers": [
+    {
+        "fileMatch": [
+            "^Dockerfile$"
+        ],
+        "customType": "regex",
+        "datasourceTemplate": "github-tags",
+        "depNameTemplate": "konflux-ci/rpm-lockfile-prototype",
+        "matchStrings": [
+            "ARG RPM_LOCKFILE_PROTOTYPE_VERSION=(?<currentValue>[\\d\\.]+)"
+        ],
+        "versioningTemplate": "semver"
+    },
+    {
+        "fileMatch": [
+            "^Dockerfile$"
+        ],
+        "customType": "regex",
+        "datasourceTemplate": "github-tags",
+        "depNameTemplate": "konflux-ci/pipeline-migration-tool",
+        "matchStrings": [
+            "ARG PIPELINE_MIGRATION_TOOL_VERSION=(?<currentValue>[\\d\\.]+)"
+        ],
+        "versioningTemplate": "semver"
+    }
+  ]
 }
