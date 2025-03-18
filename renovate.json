@@ -2,7 +2,7 @@
   "customManagers": [
     {
         "fileMatch": [
-            "^Dockerfile$"
+            "^config$"
         ],
         "customType": "regex",
         "datasourceTemplate": "github-tags",
@@ -14,7 +14,7 @@
     },
     {
         "fileMatch": [
-            "^Dockerfile$"
+            "^config$"
         ],
         "customType": "regex",
         "datasourceTemplate": "github-tags",
