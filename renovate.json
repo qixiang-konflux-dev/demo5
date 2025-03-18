@@ -9,7 +9,7 @@
             "datasourceTemplate": "github-tags",
             "depNameTemplate": "konflux-ci/pipeline-migration-tool",
             "matchStrings": [
-                "ARG PIPELINE_MIGRATION_TOOL_VERSION=(?<currentValue>[\\d\\.]+)"
+                "ARG PIPELINE_MIGRATION_TOOL_VERSION=v(?<currentValue>[\\d\\.]+)"
             ],
             "versioningTemplate": "semver"
         }
