@@ -1,7 +1,7 @@
 # Build with: podman build --ulimit nofile=65535:65535 . -t custom-renovate
 # Run with: podman run --rm <additional args> custom-renovate renovate
 
-FROM registry.access.redhat.com/ubi9-minimal
+FROM registry.access.redhat.com/ubi9-minimal:latest@sha256:30bbd445046a3a63f5f5557a3c67dee74e3c8e7855eb0347630b020f3689823f
 LABEL description="Mintmaker - Renovate custom image" \
       summary="Mintmaker basic container image - a Renovate custom image" \
       maintainer="EXD Rebuilds Guild <exd-guild-rebuilds@redhat.com >" \

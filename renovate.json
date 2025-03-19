@@ -1,4 +1,5 @@
 {
+  "enabledManagers": ["dockerfile"],
   "tekton": {
     "enabled": true,
     "automergeType": "pr",
