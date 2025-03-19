@@ -31,5 +31,6 @@
         ],
         "versioningTemplate": "semver"
     }
-  ]
+  ],
+  "schedule": ["at any time"]
 }
